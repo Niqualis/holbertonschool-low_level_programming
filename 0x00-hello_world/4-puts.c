@@ -1,5 +1,7 @@
 #include <stdio.h>
-/* print out a string to stdout.*/
+/**
+ * print out a string to stdout.
+*/
 
 int main(void)
 {
