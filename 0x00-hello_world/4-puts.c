@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /* print out a string to stdout.*/
 
 int main(void)
