@@ -1,17 +1,20 @@
 #include "holberton.h"
-
 /**
-* print_last_digit - prints the last digit of a number
-*@n: number being tested
-* Return: Always 0.
+* print_last_digit - a function that prints the last digit of a number
+* @f: number's last digit result
+* Return: value of the last digit
 */
-
-int print_last_digit(int n)
+int print_last_digit(int f)
 {
-n = n % 10;
+int j;
 
-if (n < 0)
-n = -n;
-_putchar(r + '0');
-return (n);
+pld = (f % 10);
+
+if (j < 0)
+{
+j = (-1 * j);
+}
+
+_putchar(j + '0');
+return (j);
 }
