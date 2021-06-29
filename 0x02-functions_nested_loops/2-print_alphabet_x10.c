@@ -1,17 +1,16 @@
 #include "holberton.h"
 /**
-* print_alphabet_x10 - takes unspecificed number of arguments
-* Description: 10 times the alphabet in lowercase
+* print_alphabet_x10 - takes unspecificed number of arguments, returns value
+* Description: longer things about the print_alphabet_x10 function
 * Return: 0
 */
 void print_alphabet_x10(void)
 {
 int num;
 int il;
-
 for (num = 0; num <= 9; num++)
 {
-for (il = 'i'; il <= 'l'; il++)
+for (il = 'a'; il <= 'z'; il++)
 {
 _putchar(il);
 }
