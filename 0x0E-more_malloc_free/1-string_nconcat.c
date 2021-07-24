@@ -32,7 +32,7 @@ s1 = tmp1;
 
 len2 = n;
 
-str_copy = malloc((len1 + len2) * sizeof(char) + 1);
+str_copy = malloc((len1 + len2) *sizeof(char) + 1);
 if (str_copy == NULL)
 return (NULL);
 
