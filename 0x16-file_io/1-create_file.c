@@ -7,28 +7,28 @@
 */
 int create_file(const char *filename, char *text_content)
 {
-int file, i = 0;
+
+int ID = 0, wr = 0, count = 0;
 
 if (filename == NULL)
-return (-1);
-
-file = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
-if (file == -1)
-return (-1);
-
-while (text_content[i])
-i++;
-
-if (text_content == NULL)
 {
-close(file);
 return (-1);
 }
-else
+if (text_content != NULL)
 {
-write(file, text_content, i);
-}
+for (count = 0; text_content[count] != '\0'; count++)
 
-close(file);
+}
+ID = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
+if (ID == -1)
+{
+return (-1);
+}
+wr = write(ID, text_content, count);
+if (wr == -1)
+{
+return (-1);
+}
+close(ID);
 return (1);
 }
