@@ -17,7 +17,7 @@ return (-1);
 if (text_content != NULL)
 {
 for (count = 0; text_content[count] != '\0'; count++)
-
+{}
 }
 ID = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 if (ID == -1)
